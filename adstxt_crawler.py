@@ -6,7 +6,8 @@
 #
 # Author: Neal Richter, neal@hebbian.io
 #
-# Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+# Redistribution and use in source and binary forms, with or without modification, are permitted provided
+# that the following conditions are met:
 #
 # 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the
 #    following disclaimer.
@@ -22,6 +23,20 @@
 # HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 # NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
+########################################################################################################
+
+
+########################################################################################################
+# See README.md file
+#
+# This is a reference implemenation of an ads.txt crawler that downloads, parses and dumps the data to a SQLiteDB
+# The code assumes that you have SQLLite installed and created the DB with the associated SQL file
+#
+# This code would be suitable for a small scale crawler, however it is missing many production features
+# for large scale use, such as parallel HTTP download and parsing of the data files, stateful recovery
+# of target servers being down, usage of a real production DB server etc.  Use as a reference for your own
+# implementations or harden and enhance this code as needed.
+#
 ########################################################################################################
 
 import sys
